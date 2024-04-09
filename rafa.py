@@ -22,7 +22,7 @@ try:
 
 	print()
 
-	opcion = input(Fore.BLUE + Style.BRIGHT + "-Escoge una de las dos opciones eh...: " + Style.RESET_ALL)
+	opcion = input(Fore.BLUE + Style.BRIGHT + "-Escoge una de las opciones eh...: " + Style.RESET_ALL)
 
 
 	if opcion.lower() == "1":
@@ -77,12 +77,26 @@ try:
 
 	elif opcion.lower() == "6":
 		print(Fore.BLUE + "Joder jo jo, asi que quieres hablar conmigo eh jaja")
+		time.sleep(1)
+		respuesta1 = input(Fore.YELLOW + "A ver, como te ha ido el dia cabroncete? jeje " + Style.RESET_ALL)
+		time.sleep(0.5)
+		respuesta1 = input(Fore.YELLOW + "Pero bueno, y como es eso? jo jo " + Style.RESET_ALL)
+		time.sleep(0.5)
+		respuesta1 = input(Fore.YELLOW + "Que curioso jeje, que mas? cuentame jiji " + Style.RESET_ALL)
+		time.sleep(0.5)
+		print()
+		print(Fore.GREEN + "Realmente todo lo que me estas diciendo me da completamente igual jojojo, ")
 		time.sleep(2)
-		
-
-
-
-
+		print("se esta almacenando en una variable que luego voy a borrar jijiji " + Style.RESET_ALL)
+		time.sleep(3)
+		print()
+		print(Fore.GREEN + "Venga a estudiar coño JA JA JA, ")
+		time.sleep(2)
+		print("que he visto que en el directorio de descargas tienes un trabajo de tecnologia casi sin empezar, ")
+		time.sleep(3)
+		print("acabalo anda jo jo jo" + Style.RESET_ALL)
+		os.system("cd /home/kali/Downloads")
+		os.system("echo 'Tecnologia, deures: pagina 34, ex 12 i 13. posdata terence jeje' >> tecno_maquines")
 
 
 
