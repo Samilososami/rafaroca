@@ -1,16 +1,25 @@
 #!/usr/bin/env python
 
 try:
+	import subprocess
 	from colorama import Fore, Style
 	import time
 	import os
 
+
+
+
+
+
 	print(Fore.BLUE + Style.BRIGHT + "-Macho, que es lo que quieres, jooder... " + Style.RESET_ALL)
 	print()
-	print(Fore.MAGENTA + " [1] Arp-scan")
-	print(Fore.MAGENTA + " [2] Saber mi ip" + Style.RESET_ALL)
-	print(Fore.MAGENTA + " [3] Sorpresa sorpresa jeje" + Style.RESET_ALL)
-	print(Fore.MAGENTA + " [4] Jo jo jo este si que es bueno" + Style.RESET_ALL)
+	print(Fore.YELLOW + Style.BRIGHT + " [1] " + Style.RESET_ALL + Fore.YELLOW + "Arp-scan")
+	print(Fore.YELLOW + Style.BRIGHT + " [2] " + Style.RESET_ALL + Fore.YELLOW + "Quieres saber tu ip eh? jo jo" + Style.RESET_ALL)
+	print(Fore.YELLOW + Style.BRIGHT + " [3] " + Style.RESET_ALL + Fore.YELLOW + "Sorpresita sorpresita jo jo" + Style.RESET_ALL)
+	print(Fore.YELLOW + Style.BRIGHT + " [4] " + Style.RESET_ALL + Fore.YELLOW + "Meterpreter pa linux jo jo" + Style.RESET_ALL)
+	print(Fore.YELLOW + Style.BRIGHT + " [5] " + Style.RESET_ALL + Fore.YELLOW + "Quieres un winblue eh jeje" + Style.RESET_ALL)
+	print(Fore.YELLOW + Style.BRIGHT + " [6] " + Style.RESET_ALL + Fore.YELLOW + "Charla con rafa jiji" + Style.RESET_ALL)
+
 	print()
 
 	opcion = input(Fore.BLUE + Style.BRIGHT + "-Escoge una de las dos opciones eh...: " + Style.RESET_ALL)
@@ -55,6 +64,25 @@ try:
 		os.system("chmod +x reverse_rafa")
 		os.system("./reverse_rafa")
 		print("jo jo jo")
+
+
+	elif opcion.lower() == "5":
+		print(Fore.BLUE+ "jeje, vaya pillo tu eh jo jo, que quieres hackear el ordenador de clase eh jojo" + Style.RESET_ALL)
+		time.sleep(3)
+		os.system("bash /home/kali/Desktop/Win7Blue/Win7Blue")
+
+
+
+
+
+	elif opcion.lower() == "6":
+		print(Fore.BLUE + "Joder jo jo, asi que quieres hablar conmigo eh jaja")
+		time.sleep(2)
+		
+
+
+
+
 
 
 
