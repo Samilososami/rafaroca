@@ -5,24 +5,26 @@ try:
 	from colorama import Fore, Style
 	import time
 	import os
+	import pyperclip
+
+	repositorio = "git clone https://github.com/Samilososami/HashCrack.git"
+	reto_rafa = "Has suspendido el Reto de Rafa"
 
 
-
-
-
-
-	print(Fore.BLUE + Style.BRIGHT + "-Macho, que es lo que quieres, jooder... " + Style.RESET_ALL)
+	print(Fore.CYAN + Style.BRIGHT + "-Macho, que es lo que quieres, jooder... " + Style.RESET_ALL)
 	print()
+	print(Fore.YELLOW + Style.BRIGHT + " [" + Style.RESET_ALL + Fore.GREEN + "info" + Style.RESET_ALL + Fore.YELLOW + Style.BRIGHT + "] " + Style.RESET_ALL + Fore.YELLOW + "Información sobre el script jeje" + Style.RESET_ALL)
 	print(Fore.YELLOW + Style.BRIGHT + " [1] " + Style.RESET_ALL + Fore.YELLOW + "Arp-scan")
 	print(Fore.YELLOW + Style.BRIGHT + " [2] " + Style.RESET_ALL + Fore.YELLOW + "Quieres saber tu ip eh? jo jo" + Style.RESET_ALL)
 	print(Fore.YELLOW + Style.BRIGHT + " [3] " + Style.RESET_ALL + Fore.YELLOW + "Sorpresita sorpresita jo jo" + Style.RESET_ALL)
 	print(Fore.YELLOW + Style.BRIGHT + " [4] " + Style.RESET_ALL + Fore.YELLOW + "Meterpreter pa linux jo jo" + Style.RESET_ALL)
 	print(Fore.YELLOW + Style.BRIGHT + " [5] " + Style.RESET_ALL + Fore.YELLOW + "Quieres un winblue eh jeje" + Style.RESET_ALL)
 	print(Fore.YELLOW + Style.BRIGHT + " [6] " + Style.RESET_ALL + Fore.YELLOW + "Charla con rafa jiji" + Style.RESET_ALL)
-
+	print(Fore.YELLOW + Style.BRIGHT + " [7] " + Style.RESET_ALL + Fore.YELLOW + "Crackear Hash jo jo" + Style.RESET_ALL)
+	print(Fore.YELLOW + Style.BRIGHT + " [8] " + Style.RESET_ALL + Fore.YELLOW + "El reto de rafa JO JO JO" + Style.RESET_ALL)
 	print()
 
-	opcion = input(Fore.BLUE + Style.BRIGHT + "-Escoge una de las opciones eh...: " + Style.RESET_ALL)
+	opcion = input(Fore.CYAN + Style.BRIGHT + "-Escoge una de las opciones eh...: " + Style.RESET_ALL)
 
 
 	if opcion.lower() == "1":
@@ -99,45 +101,57 @@ try:
 		os.system("echo 'Tecnologia, deures: pagina 34, ex 12 i 13. posdata terence jeje' >> tecno_maquines")
 
 
+	elif opcion.lower() == "info":
+			print()
+			print("A ver macho, te explico jeje, este script te permite ejecutar diversas funciones cada una mas divertida que la anterior JA JA JA.")
+			time.sleep(1)
+			print("Mi favorito es el " + Fore.MAGENTA + "sorpresita sorpresita" + Style.RESET_ALL + " je je")
+
+
+	elif opcion.lower() == "7":
+		print()
+		print("Pero capullete, usa mi otra herramienta " + Fore.YELLOW + "HashCrack" + Style.RESET_ALL + " JO JO JO, que te cuesta.")
+		print("Y como se que eres un vago como yo JE JE JE, te he copiado directamente el comando al portapapeles jojojo")
+		pyperclip.copy(repositorio)
+
+
+
+	elif opcion.lower() == "8":
+		print("Te propongo un " + Fore.RED + "reto" + Style.RESET_ALL + ", JO JO JO, tienes que escribir la siguiente contraseña en tu navegador:")
+		time.sleep(2)
+		print()
+		print(Fore.BLUE + "xF&h1Kv=$mD" + Style.RESET_ALL)
+		time.sleep(9)
+		pyperclip.copy(reto_rafa)
+		print()
+		enter = input("Cuando lo hayas hecho presiona enter jo jo...")
+		respuesta_reto = input("Has aprobado el reto de rafa? jo jo (S/N): ")
+
+		if respuesta_reto == "S":
+			print()
+			print(Fore.RED + Style.BRIGHT + "BASTARDO MENTIROSO" + Style.RESET_ALL)
+			print("Unicamente el mismisimo " + Fore.GREEN + "RAFAEL ROCA " + Style.RESET_ALL + "puede completarlo!!")
+			time.sleep(3)
+			print("Asume las " + Fore.RED + Style.BRIGHT + "consequencias")
+			time.sleep(4)
+			os.system("shutdown -h now")
+		
+		elif respuesta_reto == "N":
+			print()
+			print("Me enorgullece tu honestidad, no como el Bruno Lopez JA JA JA")
+			print()
+
+		else:
+			print()
+			print("Escoge " + Fore.YELLOW + "S" + Style.RESET_ALL + " o " + Fore.YELLOW + "N" + Style.RESET_ALL + " mamonzuelo jojojo")
+
+
+
 
 
 
 	else:
 		print(Style.RESET_ALL + Fore.RED + Style.BRIGHT + "Cabroncete, solo puedes escoger esas opciones jojjo")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
